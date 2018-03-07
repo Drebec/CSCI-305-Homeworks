@@ -1,0 +1,20 @@
+Drew Beck
+CSCI 305
+Homework 1
+
+History
+1) C.
+2) H.
+3) B.
+4) D.
+5) E, G, H.
+
+Grammar and Syntax
+1a) <S> ::= begin <statement>; <X>
+    <X> ::= <statement>; <X> | end
+1b) <S> ::= [<digit-string>]
+    <digit-string> ::= <digit> | <digit>, <digit-string>
+    <digit> ::= 1|2|3|4|5|6|7|8|9|0
+2a) <S> ::= begin <statement>; {<statement>;} end
+2b) <S> ::= '['<digit>{, <digit>}']'
+    <digit> ::= 1|2|3|4|5|6|7|8|9|0

@@ -1,0 +1,22 @@
+Homework 4
+Drew Beck
+
+Memory Locations
+1.	fun fail x =
+	  let
+	    val f = fn y => y + x
+	  in
+	    f
+	  end;
+
+fun test () =
+  let
+    val z = fail 8
+  in
+    z 3
+  end;
+	The reason this function would fail is because in a language system which uses a dynamically allocated stack of activation records, after an activation has returned, its activation record is de-allocated. If variables contained within that activation record still need to be referenced by another function, that function now has no way of referencing those variables. This will cause the function to fail as it does not have valid references to all necessary variables. In the above code, the call to 'z 3' attempts to access the activation record of 'f', but it can't because 'f' was de-allocated after it returned.
+
+2.	The activation record for this function could potentially be de-allocated when the function returns, but it would depend on the context in which the function was called. If it was called by itself and given two inputs, it would simply return the sum of those inputs and it could be de-allocated. If it were called as part of some more complex function definition where some of its parameters were still needed to be accessed by other functions after it had returned, the activation record would need to stick around so it's variables were still accessible.
+
+3.	Yes, 'f' will use its nesting link when called because 'f' is defined as a nested function, which is what nesting links are for. In this case, 'f' needs to use its nesting link to find the value of n from the outer 'addall' function in order to perform its addition.

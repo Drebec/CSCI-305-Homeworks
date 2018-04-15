@@ -1,0 +1,12 @@
+Drew Beck
+Homework 5
+
+Object Orientation
+1.	
+
+Parameters
+1.	By Value: A[0] = 0, A[1] = 2
+	By Reference: A[0] = 3, A[1] = 2
+	By Value-Result: A[0] = 1 or A[0] = 3 depending on the order in which the result assignment is performed, A[1] = 2
+	By Macro Expansion: A[0] = 1, A[1] = 3
+	By Name: A[0] = 1, A[1] = 3

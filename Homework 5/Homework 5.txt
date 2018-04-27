@@ -10,7 +10,7 @@ Object Orientation
 	
 2.	Covariance is used in the Java language when overriding methods. The overriding method is covariant in the return type only. Everything else about the method must be the same including argument types. Therefore, if the above example was written in Java, A1 would have to be a subclass of A2, but B1 and B2 would need to be the same type. The advantage of this rule is it ensures no type errors can occur when using the overriding method. Source: https://briangordon.github.io/2014/09/covariance-and-contravariance.html
 
-	Contravariance is used in C#. This is essentially the opposite of covariance, which means in the example, A1 could be a more generic type of A2, i.e. A2 inherits from A1. Source: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/covariance-contravariance/
+	Contravariance is used in C#. This is essentially the opposite of covariance, which means in the example, A1 could be a more generic type of A2, i.e. A2 inherits from A1. The advantage here is that the overriding return type can be less specific than the overridden return type. Source: https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/covariance-contravariance/
 
 Parameters
 1.	By Value: A[0] = 0, A[1] = 2

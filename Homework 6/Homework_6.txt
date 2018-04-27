@@ -3,7 +3,7 @@ Homework 6
 
 Cost Models
 1.	A[i] would be found using the equation base + (size * i)
-2.	A[i][j][k] would be found using the equation base + (k * size) + (j * p * size) + (i * m * n * size)
+2.	A[i][j][k] would be found using the equation base + (k * size) + (j * p * size) + (i * m * p * size)
 
 Concurrency
 1.	The three levels of concurrency in programs are the machine instruction level, the high-level language system level, and the unit level.
